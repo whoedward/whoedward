@@ -17,7 +17,7 @@ var Nav = () => {
                             <Link to="/resume" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Resume</Link>
                         </li>
                         <li>
-                            <Link to="/contact" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>Contact</Link>
+                            <Link to="/elementSummaryReveal" activeClassName="active-link" activeStyle={{fontWeight: 'bold'}}>ElementSummaryReveal</Link>
                         </li>
                     </ul>
                 </div>
