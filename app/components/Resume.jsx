@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Modal = require('react-modal');
-import Img from 'img/resume.jpg'
+import Img from 'public/img/resume.jpg'
 
 class Resume extends React.Component {
   constructor(props) {

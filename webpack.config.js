@@ -18,8 +18,8 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: './public/bundle.js',
-    publicPath: __dirname
+    filename: './public/bundle.js'
+    // publicPath: __dirname
   },
   resolve: {
     root: __dirname,
@@ -44,11 +44,12 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-            // 'file?hash=sha512&digest=hex&name=[hash].[ext]',
-            'file-loader?name=/app/components/img/[name].[ext]',
-            'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
-     ]
+        loaders: 'url-loader'
+    //      [
+    //         '// 'file?hash=sha512&digest=hex&name=[hash].[ext]',
+    //         'file-loader?name=public/img/[name].[ext]',
+    //         'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false''
+    //  ]
       }
     ]
     },
