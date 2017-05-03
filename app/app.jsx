@@ -7,7 +7,6 @@ var Countdown = require('Countdown');
 
 
 // Load foundation-sites
-require('style!css!foundation-sites/dist/foundation.min.css');
 $(document).foundation();
 
 // App CSS
