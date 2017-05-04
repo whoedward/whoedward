@@ -13,15 +13,10 @@ class Resume extends React.Component {
     return (
       <div>
           <div className="row">
-              <div className="columns small-10">
-                  <button onClick={() => this.openModal()}>
-                      <img src={Img} />
-                  </button>
-                  <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-                      <h1>breadcrumbs title</h1>
-                      <div id='container'></div>
-                      <p><button onClick={() => this.closeModal()}>Close</button></p>
-                  </Modal>
+              <div style={{"textAlign":"center"}}  className="columns small-10">
+
+                  <a href="https://drive.google.com/file/d/0B_ESdI34yUZfX1M1QkdMM3ZkNTA/view?usp=sharing"> <img src={Img} /> </a>
+                  
               </div>
           </div>
 
