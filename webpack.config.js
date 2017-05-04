@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: 'url-loader'
+        loader: 'url-loader'
     //      [
     //         '// 'file?hash=sha512&digest=hex&name=[hash].[ext]',
     //         'file-loader?name=public/img/[name].[ext]',

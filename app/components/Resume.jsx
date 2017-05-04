@@ -10,7 +10,6 @@ class Resume extends React.Component {
   }
 
   render() {
-      console.log(Img);
     return (
       <div>
           <div className="row">
@@ -20,7 +19,7 @@ class Resume extends React.Component {
                   </button>
                   <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
                       <h1>breadcrumbs title</h1>
-                      <p>hello</p>
+                      <div id='container'></div>
                       <p><button onClick={() => this.closeModal()}>Close</button></p>
                   </Modal>
               </div>
