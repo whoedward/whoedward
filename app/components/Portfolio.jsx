@@ -1,7 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Modal = require('react-modal');
-import breadcrumbs from 'public/img/breadcrumbs.jpg'
+import breadcrumbs from 'public/img/breadcrumbs.jpg';
+import reactWeather from 'public/img/react-weather.jpg';
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -15,27 +16,34 @@ class Portfolio extends React.Component {
     return (
       <div>
           <div className="row">
-              <div className="columns small-4">
+              <div className="columns small-6">
                   <button onClick={() => this.openModal1()}>
-                      <img src={breadcrumbs} />
+                      <img style={{height:'15rem', width:'20rem'}} src={breadcrumbs} />
                   </button>
                   <Modal isOpen={this.state.isModalOpen1} onClose={() => this.closeModal1()}>
-                      <h1><a href="https://breadcrumbs.ninja/">breadcrumbs.ninja/</a></h1>
-                      <p>hello</p>
-                      <p><button onClick={() => this.closeModal1()}>Close</button></p>
+                      <p style={{float:'right'}}><button onClick={() => this.closeModal1()}>Close</button></p>
+                      <h1 style={{'text-align':'center'}}><a href="https://breadcrumbs.ninja/">https://breadcrumbs.ninja/</a></h1>
+                      <h5><strong>Technologies Used:</strong> MeteorJS, CoffeeScript, Chrome API</h5>
+                      <img style={{height:'100%', width:'100%'}} src={breadcrumbs} />
                   </Modal>
               </div>
 
-              <div className="columns small-4">
-                  <button onClick={() => this.openModal2()}>react-weather/</button>
+              <div className="columns small-6">
+                  <button onClick={() => this.openModal2()}>
+                      <img src={reactWeather}/>
+                  </button>
                   <Modal isOpen={this.state.isModalOpen2} onClose={() => this.closeModal2()}>
-                      <h1>weather title</h1>
+                      <h1><a href="http://react-weather-whoedward.herokuapp.com">React Weather/</a></h1>
                       <p>weather</p>
                       <p><button onClick={() => this.closeModal2()}>Close</button></p>
                   </Modal>
               </div>
 
-              <div className="columns small-4">
+
+
+          </div>
+          <div className="row">
+              <div className="columns small-6">
                   <button onClick={() => this.openModal3()}>react-timer/</button>
                   <Modal isOpen={this.state.isModalOpen3} onClose={() => this.closeModal3()}>
                       <h1>timer title</h1>
@@ -43,7 +51,6 @@ class Portfolio extends React.Component {
                       <p><button onClick={() => this.closeModal3()}>Close</button></p>
                   </Modal>
               </div>
-
           </div>
 
       </div>
