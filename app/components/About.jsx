@@ -14,8 +14,8 @@ var About = React.createClass({
                 <p>
                     I am currently a consultant at PricewaterhouseCoopers and I have experience in many industries from Cybersecurity to Health to Salesforce. Although I have a background in Computer Science, I decided to pursue consulting after graduation for a multitude of reasons. I wanted to be able to explore other industries and fields to gain exposure on both sides of the spectrum. I wanted to work on my soft skills in addition to my technical skills in order to become well-versed in both areas. This past year in consulting has taught me about different industries and how to interact with clients and business users. I’m ready to go back to my roots and apply these skills as a Software Engineer.
                 </p>
-
-                <h4>Please contact me for software opportunities as I am actively looking for jobs as of May 2017.</h4>
+                
+                <h4>Please contact me for software opportunities.</h4>
             </div>
         );
     }
